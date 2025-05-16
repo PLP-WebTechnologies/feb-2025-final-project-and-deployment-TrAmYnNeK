@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore insightful blogs on tech, travel, productivity, and more." />
+  <title>Blogs - My Blog</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <header>
+    <div class="nav-container">
+      <h1>My Blog</h1>
+      <nav aria-label="Main navigation">
+        <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+        <ul id="menu">
+          <li class="dropdown">
+            <a href="#" aria-haspopup="true">Menu ▾</a>
+            <ul class="dropdown-content" aria-label="Dropdown">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="about.html" class="nav-link">About</a></li>
+              <li><a href="blog.html" class="nav-link">Blogs</a></li>
+              <li><a href="contact.html" class="nav-link">Contacts</a></li>
+              <li><a href="form.html" class="nav-link">Forms</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="blog-container">
+      <article data-aos="fade-up">
+        <h2>Exploring the Future of AI</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolores officia alias tempora distinctio, quam omnis temporibus id pariatur laboriosam asperiores quia nulla est voluptatibus nisi quis molestiae expedita quibusdam?</p>
+      </article>
+      <article data-aos="fade-up" data-aos-delay="100">
+        <h2>Traveling Through Japan</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ratione! Cum veritatis repellendus quae, nulla minima sint quisquam ducimus possimus libero at tempora, delectus itaque consectetur quos ut cumque voluptatibus?</p>
+      </article>
+      <article data-aos="fade-up" data-aos-delay="200">
+        <h2>Boosting Productivity with Simple Habits</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iure quidem saepe nostrum aliquid necessitatibus voluptas accusantium asperiores! Nulla pariatur voluptatibus temporibus deleniti dolores blanditiis laboriosam! Dolorem quod alias ipsa.</p>
+      </article>
+      <article data-aos="fade-up" data-aos-delay="300">
+        <h2>Web Development Trends in 2025</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi atque tempore debitis, numquam eveniet dignissimos excepturi, temporibus est at dolore soluta ut error molestias ex repellendus, odit quos labore veritatis!</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Blog</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

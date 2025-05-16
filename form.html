@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Leave feedback and rate our blogs." />
+  <title>Feedback Form - My Blog</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <header>
+    <div class="nav-container">
+      <h1>My Blog</h1>
+      <nav aria-label="Main navigation">
+        <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+        <ul id="menu">
+          <li class="dropdown">
+            <a href="#" aria-haspopup="true">Menu ▾</a>
+            <ul class="dropdown-content" aria-label="Dropdown">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="about.html" class="nav-link">About</a></li>
+              <li><a href="blog.html" class="nav-link">Blogs</a></li>
+              <li><a href="contact.html" class="nav-link">Contacts</a></li>
+              <li><a href="form.html" class="nav-link">Forms</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section data-aos="fade-up">
+      <h2>Give Us Your Feedback</h2>
+      <form id="feedback-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Jane Doe" />
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required placeholder="jane@example.com" />
+
+        <label for="blog">Which blog are you reviewing?</label>
+        <select id="blog" name="blog" required>
+          <option value="" disabled selected>Select a blog</option>
+          <option value="ai">Exploring the Future of AI</option>
+          <option value="japan">Traveling Through Japan</option>
+          <option value="productivity">Boosting Productivity</option>
+          <option value="webdev">Web Development Trends</option>
+        </select>
+
+        <label for="rating">Rating (1 = Poor, 5 = Excellent):</label>
+        <select id="rating" name="rating" required>
+          <option value="" disabled selected>Select a rating</option>
+          <option value="1">⭐☆☆☆☆</option>
+          <option value="2">⭐⭐☆☆☆</option>
+          <option value="3">⭐⭐⭐☆☆</option>
+          <option value="4">⭐⭐⭐⭐☆</option>
+          <option value="5">⭐⭐⭐⭐⭐</option>
+        </select>
+
+        <label for="review">Your Review:</label>
+        <textarea id="review" name="review" rows="5" placeholder="Write your thoughts here..." required></textarea>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Blog</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
